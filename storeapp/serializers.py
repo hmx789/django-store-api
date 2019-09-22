@@ -21,7 +21,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
     model = Product
     depth = 1
-    fields = ['id', 'price', 'size', 'units_in_stock', 'units_on_order', 'description', 'category']
+    fields = ['id', 'name', 'price', 'size', 'units_in_stock', 'units_on_order', 'description', 'category']
 
 class ProductImageSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
